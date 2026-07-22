@@ -17,20 +17,20 @@ Designed and implemented an AES-128 (Advanced Encryption Standard) encryption an
 -Verilog testbench for functional verification
 -Synthesizable RTL design
 
-#Verification
+# Verification
 -Verified using standard NIST AES-128 test vectors
 -Cross-validated outputs using Python reference implementation
 -Performed RTL simulation, waveform analysis, and functional verification using Xilinx ISim
 -Executed logic synthesis using Xilinx ISE 14.7
 
-#Applications
+# Applications
 --Secure communication systems
 -FPGA-based cryptographic accelerators
 -Embedded security systems
 -Hardware cryptographic processors
 -VLSI/ASIC digital security designs
 
-#Results
+# Results
 - Successfully synthesized the AES-128 RTL design using Xilinx ISE 14.7.
 - Verified functionality using NIST AES-128 test vectors, Python reference outputs, and RTL simulation.
 - Validated a synthesizable and modular hardware implementation for FPGA-based cryptographic applications.
