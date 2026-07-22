@@ -24,7 +24,7 @@ Designed and implemented an AES-128 (Advanced Encryption Standard) encryption an
 -Executed logic synthesis using Xilinx ISE 14.7
 
 # Applications
---Secure communication systems
+-Secure communication systems
 -FPGA-based cryptographic accelerators
 -Embedded security systems
 -Hardware cryptographic processors
