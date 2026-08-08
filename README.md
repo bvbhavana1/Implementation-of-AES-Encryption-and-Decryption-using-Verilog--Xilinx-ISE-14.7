@@ -34,3 +34,5 @@ Designed and implemented an AES-128 (Advanced Encryption Standard) encryption an
 - Successfully synthesized the AES-128 RTL design using Xilinx ISE 14.7.
 - Verified functionality using NIST AES-128 test vectors, Python reference outputs, and RTL simulation.
 - Validated a synthesizable and modular hardware implementation for FPGA-based cryptographic applications.
+
+  ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/02e6aeaeff051c1f522c3194fb90535d5ef25584/AES_1.jpeg)
