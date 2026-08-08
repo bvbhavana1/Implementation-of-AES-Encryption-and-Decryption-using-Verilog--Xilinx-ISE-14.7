@@ -37,7 +37,7 @@ Designed and implemented an AES-128 (Advanced Encryption Standard) encryption an
 
   ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/02e6aeaeff051c1f522c3194fb90535d5ef25584/AES_1.jpeg)
   ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/31db2cc754ede59bef7d9b3500683fffee1c6707/AES_2.jpeg)
-  ![image alt]()
+  ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/79c7203874905b96eeeefdc63f31f73c6c80d84c/AES_3.jpeg)
   ![image alt]()
 
   ![image alt]()
