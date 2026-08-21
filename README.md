@@ -61,7 +61,7 @@ AES-128 encryption consists of an initial key addition followed by ten transform
                         ▼
                 ┌────────────────┐
                 │  AddRoundKey   │
-                │    Round 0      │
+                │    Round 0     │
                 └───────┬────────┘
                         │
                         ▼
@@ -146,7 +146,7 @@ The design also implements AES-128 decryption using the inverse transformations 
                   InvMixColumns
                        │
                        ▼
-                    ... 
+                      ... 
                        │
                        ▼
                128-bit Plaintext
@@ -157,16 +157,16 @@ The inverse transformations reconstruct the original plaintext from the cipherte
 # 1. SubBytes
 Performs a byte-wise nonlinear substitution using the AES S-box.
 ```text
-128-bit State
-     │
-     ▼
-16 × 8-bit bytes
-     │
-     ▼
-AES S-Box substitution
-     │
-     ▼
-128-bit transformed state
+              128-bit State
+                   │
+                   ▼
+            16 × 8-bit bytes
+                   │
+                   ▼
+        AES S-Box substitution
+                   │
+                   ▼
+      128-bit transformed state
 ```
 # 2. ShiftRows
 Performs the AES row permutation on the 4×4 byte state matrix.
@@ -224,32 +224,32 @@ The key schedule is generated from the 128-bit input cipher key and used by the 
 The core uses sequential control to process the AES rounds.
 Operation Sequence
 ```text
-IDLE
- │
- │ start = 1
- ▼
+        IDLE
+         │
+         │ start = 1
+         ▼
 Initial AddRoundKey
- │
- ▼
-Round 1
- │
- ▼
-Round 2
- │
- ▼
-  ...
- │
- ▼
-Round 9
- │
- ▼
-Final Round 10
- │
- ▼
-ciphertext valid
- │
- ▼
-done = 1
+         │
+         ▼
+     Round 1
+         │
+         ▼
+     Round 2
+         │
+         ▼
+        ...
+         │
+         ▼
+      Round 9
+         │
+         ▼
+  Final Round 10
+         │
+         ▼
+ ciphertext valid
+         │
+         ▼
+       done = 1
 ```
 The start input initiates the encryption process, while done indicates completion.
 This round-based organization avoids implementing ten complete AES rounds as a single large combinational path.
@@ -317,36 +317,37 @@ Python Reference Verification
 The hardware outputs were cross-checked against a Python AES implementation.
 
  ## RTL & Gate-Level Implementation
-RTL Schematic
+RTL Schematic ![image alt]()
 
-Gate-Level Schematic
-
+Gate-Level Schematic ![image alt]()
+ Zoomes version ![image alt]()
 These schematics provide visibility into the synthesized hardware structure and the resulting FPGA-mapped implementation.
 
 ## FPGA Implementation
 The AES design was synthesized and implemented using the Xilinx ISE design flow.
 ```text
-Verilog RTL
-    │
-    ▼
-XST Synthesis
-    │
-    ▼
-Translate
-    │
-    ▼
-MAP
-    │
-    ▼
-Place & Route
-    │
-    ▼
-Timing Analysis
-    │
-    ▼
-FPGA Bitstream / NGC
+              Verilog RTL
+                  │
+                  ▼
+              XST Synthesis
+                  │
+                  ▼
+              Translate
+                  │
+                  ▼
+              MAP
+                  │
+                  ▼
+              Place & Route
+                  │
+                  ▼
+              Timing Analysis
+                  │
+                  ▼
+              FPGA Bitstream / NGC
 ```
 ### Target Device 
+
 | Parameter            | Value                     |
 | -------------------- | ------------------------- |
 | **FPGA Family**      | Xilinx Spartan-6          |
@@ -435,6 +436,7 @@ The XST synthesis reports the following post-optimization resources:
 | IBUF                  |         3 |
 | OBUF                  |         8 |
 | **Total I/O Buffers** |    **11** |
+
 design Summary  ![image alt]()
 
 ## FPGA Timing Analysis
@@ -450,25 +452,25 @@ The implemented design achieved the following reported timing results:
 
 Critical Path
 ```text
-FDCE
-  │
-  ▼
-LUT6
-  │
-  ▼
-MUXF7
-  │
-  ▼
-MUXF8
-  │
-  ▼
-LUT6
-  │
-  ▼
-LUT6
-  │
-  ▼
-FDCE
+        FDCE
+          │
+          ▼
+        LUT6
+          │
+          ▼
+        MUXF7
+          │
+          ▼
+        MUXF8
+          │
+          ▼
+        LUT6
+          │
+          ▼
+        LUT6
+          │
+          ▼
+        FDCE
 ```
 The reported critical path was:
 ```text
@@ -576,23 +578,23 @@ This provides both known-answer verification and independent software cross-vali
   ## Design Trade-Off
 The implementation uses a round-based architecture rather than fully unrolling all ten AES rounds.
 ```text
-Fully Unrolled AES
-        │
-        ├── Higher parallelism
-        ├── Higher throughput
-        └── Larger hardware cost
-                 │
-                 ▼
-        ┌────────────────┐
-        │ Design Tradeoff│
-        └────────────────┘
-                 ▲
-                 │
-Round-Based AES
-        │
-        ├── Sequential processing
-        ├── Reduced datapath complexity
-        └── Practical FPGA resource usage
+        Fully Unrolled AES
+                │
+                ├── Higher parallelism
+                ├── Higher throughput
+                └── Larger hardware cost
+                         │
+                         ▼
+                ┌────────────────┐
+                │ Design Tradeoff│
+                └────────────────┘
+                         ▲
+                         │
+        Round-Based AES
+                │
+                ├── Sequential processing
+                ├── Reduced datapath complexity
+                └── Practical FPGA resource usage
 ```
 The implementation therefore provides a useful balance between cryptographic functionality, hardware resource utilization, and achievable clock frequency.
 
