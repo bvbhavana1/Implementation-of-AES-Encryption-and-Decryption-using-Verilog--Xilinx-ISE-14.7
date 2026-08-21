@@ -312,15 +312,14 @@ The RTL-generated ciphertext exactly matches the official AES-128 known-answer v
 ```
 ## Simulation
 The design was simulated using Xilinx ISim, with additional verification using a Python software reference implementation.
-Simulation Waveforms
+# Simulation Waveforms
 ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/8e6ca437b921b4b24b9f63163caccea4618279c4/results/AES_3.jpeg)
 ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/d5e33fe8e82f8e9076d9a46a0ca4e86f4c5d2e5e/results/AES_4.jpeg)
-Python Reference Verification
-![image alt]()
-The hardware outputs were cross-checked against a Python AES implementation.
+
+#Python Reference Verification
+![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/f58f0cf042825a67871bc8d04c184ac1479ec033/results/AES_5.jpeg)
 
 ### Top-Level RTL Block Diagram
-
 The top-level RTL view shows the AES-128 core interface, including the 128-bit plaintext and key inputs, clock/reset and start control, and ciphertext/ready outputs.
 
 ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/0682d6e6c9e439f59a8052d66435e1558babbe80/results/AES_1.jpeg)
