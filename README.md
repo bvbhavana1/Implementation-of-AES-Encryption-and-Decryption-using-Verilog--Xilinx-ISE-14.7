@@ -313,24 +313,26 @@ The RTL-generated ciphertext exactly matches the official AES-128 known-answer v
 ## Simulation
 The design was simulated using Xilinx ISim, with additional verification using a Python software reference implementation.
 Simulation Waveforms
+![image alt]()
+![image alt]()
 Python Reference Verification
+![image alt]()
 The hardware outputs were cross-checked against a Python AES implementation.
 
 ### Top-Level RTL Block Diagram
 
 The top-level RTL view shows the AES-128 core interface, including the 128-bit plaintext and key inputs, clock/reset and start control, and ciphertext/ready outputs.
 
-![AES-128 Top-Level RTL]()
+![image alt]()
 
 ### Detailed RTL Schematic
 
 The detailed RTL schematic shows the internal synthesized RTL structure and connectivity of the AES datapath and control logic.
-
-![AES-128 Detailed RTL Schematic]()
+![image alt]()
  
  Zoomed version ![image alt]()
 These schematics provide visibility into the synthesized hardware structure and the resulting FPGA-mapped implementation.
-![AES-128 Detailed RTL Schematic]()
+
 
 ## FPGA Implementation
 The AES design was synthesized and implemented using the Xilinx ISE design flow.
