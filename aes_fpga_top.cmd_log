@@ -1,0 +1,50 @@
+xst -intstyle ise -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+xst -intstyle ise -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+xst -intstyle ise -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+xst -intstyle ise -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+xst -intstyle ise -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim aes_fpga_top.ngc aes_fpga_top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+xst -intstyle ise -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+xst -intstyle ise -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+netgen -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim aes_fpga_top.ngc aes_fpga_top_synthesis.v 
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+par -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off aes_fpga_top_map.ncd aes_fpga_top.ncd aes_fpga_top.pcf 
+trce -filter /home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml aes_fpga_top.twx aes_fpga_top.ncd -o aes_fpga_top.twr aes_fpga_top.pcf -ucf aes_fpga_top.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f aes_fpga_top.ut aes_fpga_top.ncd 
+xst -intstyle ise -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+par -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off aes_fpga_top_map.ncd aes_fpga_top.ncd aes_fpga_top.pcf 
+trce -filter /home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml aes_fpga_top.twx aes_fpga_top.ncd -o aes_fpga_top.twr aes_fpga_top.pcf -ucf aes_fpga_top.ucf 
+netgen -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim aes_fpga_top.ngc aes_fpga_top_synthesis.v 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f aes_fpga_top.ut aes_fpga_top.ncd 
+xst -intstyle ise -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+xst -intstyle ise -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -ifn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.xst" -ofn "/home/ise/AES_FPGA_VPGFA/aes_fpga_top.syr" 
+netgen -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim aes_fpga_top.ngc aes_fpga_top_synthesis.v 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc aes_fpga_top.ucf -p xc6slx4-tqg144-2 aes_fpga_top.ngc aes_fpga_top.ngd  
+map -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_fpga_top_map.ncd aes_fpga_top.ngd aes_fpga_top.pcf 
+par -filter "/home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off aes_fpga_top_map.ncd aes_fpga_top.ncd aes_fpga_top.pcf 
+trce -filter /home/ise/AES_FPGA_VPGFA/iseconfig/filter.filter -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml aes_fpga_top.twx aes_fpga_top.ncd -o aes_fpga_top.twr aes_fpga_top.pcf -ucf aes_fpga_top.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f aes_fpga_top.ut aes_fpga_top.ncd 
