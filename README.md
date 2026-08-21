@@ -449,7 +449,8 @@ HDL Synthesis Report
 | OBUF                  |         8 |
 | **Total I/O Buffers** |    **11** |
 
-design Summary  ![image alt]()
+design Summary 
+![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/71254bbf6457d28489830e509240042ca8982df1/reports/aes_design_summry.jpeg)
 
 ## FPGA Timing Analysis
 The implemented design achieved the following reported timing results:
