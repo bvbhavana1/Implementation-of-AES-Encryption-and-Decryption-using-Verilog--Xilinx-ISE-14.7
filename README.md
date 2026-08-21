@@ -316,12 +316,21 @@ Simulation Waveforms
 Python Reference Verification
 The hardware outputs were cross-checked against a Python AES implementation.
 
- ## RTL & Gate-Level Implementation
-RTL Schematic ![image alt]()
+### Top-Level RTL Block Diagram
 
-Gate-Level Schematic ![image alt]()
- Zoomes version ![image alt]()
+The top-level RTL view shows the AES-128 core interface, including the 128-bit plaintext and key inputs, clock/reset and start control, and ciphertext/ready outputs.
+
+![AES-128 Top-Level RTL]()
+
+### Detailed RTL Schematic
+
+The detailed RTL schematic shows the internal synthesized RTL structure and connectivity of the AES datapath and control logic.
+
+![AES-128 Detailed RTL Schematic]()
+ 
+ Zoomed version ![image alt]()
 These schematics provide visibility into the synthesized hardware structure and the resulting FPGA-mapped implementation.
+![AES-128 Detailed RTL Schematic]()
 
 ## FPGA Implementation
 The AES design was synthesized and implemented using the Xilinx ISE design flow.
