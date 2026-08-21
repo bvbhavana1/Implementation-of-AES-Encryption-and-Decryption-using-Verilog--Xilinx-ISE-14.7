@@ -323,7 +323,7 @@ The hardware outputs were cross-checked against a Python AES implementation.
 
 The top-level RTL view shows the AES-128 core interface, including the 128-bit plaintext and key inputs, clock/reset and start control, and ciphertext/ready outputs.
 
-![image alt]()
+![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/0682d6e6c9e439f59a8052d66435e1558babbe80/results/AES_1.jpeg)
 
 ### Detailed RTL Schematic
 
