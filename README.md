@@ -314,7 +314,7 @@ The RTL-generated ciphertext exactly matches the official AES-128 known-answer v
 The design was simulated using Xilinx ISim, with additional verification using a Python software reference implementation.
 Simulation Waveforms
 ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/8e6ca437b921b4b24b9f63163caccea4618279c4/results/AES_3.jpeg)
-![image alt]()
+![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/d5e33fe8e82f8e9076d9a46a0ca4e86f4c5d2e5e/results/AES_4.jpeg)
 Python Reference Verification
 ![image alt]()
 The hardware outputs were cross-checked against a Python AES implementation.
