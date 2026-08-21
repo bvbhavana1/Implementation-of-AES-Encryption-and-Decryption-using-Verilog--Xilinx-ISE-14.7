@@ -329,10 +329,6 @@ The top-level RTL view shows the AES-128 core interface, including the 128-bit p
 The detailed RTL schematic shows the internal synthesized RTL structure and connectivity of the AES datapath and control logic.
 ![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/c18daffee7d859f2ae120b481a15e73fb4baafa6/results/AES_2.jpeg)
  
- Zoomed version ![image alt]()
-These schematics provide visibility into the synthesized hardware structure and the resulting FPGA-mapped implementation.
-
-
 ## FPGA Implementation
 The AES design was synthesized and implemented using the Xilinx ISE design flow.
 ```text
@@ -354,8 +350,13 @@ The AES design was synthesized and implemented using the Xilinx ISE design flow.
               Timing Analysis
                   │
                   ▼
-              FPGA Bitstream / NGC
+              FPGA Bitstream 
 ```
+### The following reports screenshot are available in :
+```text
+reports
+```
+
 ### Target Device 
 
 | Parameter            | Value                     |
@@ -427,7 +428,8 @@ The XST synthesis reports the following post-optimization resources:
 | 8-bit XOR4   |       160 |
 | **Total**    | **5,933** |
 
-![image alt]() HDL Synthesis Report
+HDL Synthesis Report
+![image alt]() 
 
 ### Post-MAP Primitive Utilization
 | Primitive             |     Count |
@@ -521,7 +523,8 @@ Routing contributes the majority of the reported critical-path delay, making phy
 | Global Max Fanout    | 100,000            |
 | Clock Buffer         | BUFG               |
 
-Synthesis option summary ![image alt]()
+Synthesis Summary
+![image alt]()
 
 ### XST Run Statistics
 | Metric                 |      Value |
