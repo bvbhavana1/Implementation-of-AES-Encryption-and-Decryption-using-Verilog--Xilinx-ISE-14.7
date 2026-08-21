@@ -429,7 +429,7 @@ The XST synthesis reports the following post-optimization resources:
 | **Total**    | **5,933** |
 
 HDL Synthesis Report
-![image alt]() 
+![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/f9779291259035bcc9f0f414c208129d89d65666/reports/aes_hdl_syn_rpt.jpeg) 
 
 ### Post-MAP Primitive Utilization
 | Primitive             |     Count |
