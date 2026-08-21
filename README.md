@@ -327,7 +327,7 @@ The top-level RTL view shows the AES-128 core interface, including the 128-bit p
 ### Detailed RTL Schematic
 
 The detailed RTL schematic shows the internal synthesized RTL structure and connectivity of the AES datapath and control logic.
-![image alt]()
+![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/c18daffee7d859f2ae120b481a15e73fb4baafa6/results/AES_2.jpeg)
  
  Zoomed version ![image alt]()
 These schematics provide visibility into the synthesized hardware structure and the resulting FPGA-mapped implementation.
