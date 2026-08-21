@@ -1,6 +1,6 @@
 ### AES-128 Encryption & Decryption Core | Verilog RTL + Xilinx FPGA
 
-> **A synthesizable AES-128 hardware core implementing encryption and decryption in Verilog HDL, functionally verified against the AES-128 FIPS-197 known-answer test vector, cross-validated with a Python reference model, and synthesized/implemented on a Xilinx Spartan-6 FPGA using Xilinx ISE.**
+**A synthesizable AES-128 hardware core implementing encryption and decryption in Verilog HDL, functionally verified against the AES-128 FIPS-197 known-answer test vector, cross-validated with a Python reference model, and synthesized/implemented on a Xilinx Spartan-6 FPGA using Xilinx ISE.**
 
 ##  Project Highlights
 
