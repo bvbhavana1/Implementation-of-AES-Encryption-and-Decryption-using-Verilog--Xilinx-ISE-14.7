@@ -525,7 +525,7 @@ Routing contributes the majority of the reported critical-path delay, making phy
 | Clock Buffer         | BUFG               |
 
 Synthesis Summary
-![image alt]()
+![image alt](https://github.com/bvbhavana1/Implementation-of-AES-Encryption-and-Decryption-using-Verilog--Xilinx-ISE-14.7/blob/cc0f20fed87df2d326719a4cdcdf318c649cb430/reports/aes_syn.jpeg)
 
 ### XST Run Statistics
 | Metric                 |      Value |
