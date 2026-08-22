@@ -38,6 +38,11 @@ This project implements the **AES-128** variant, which operates on:
 The design uses a **round-based sequential architecture**, where the AES state is processed one round per clock cycle rather than fully unrolling all ten rounds into a large combinational datapath.
 This approach provides a practical balance between **hardware resource usage, control complexity, and throughput** for FPGA-based cryptographic hardware.
 
+## Repository Structure of reports and results of this project :
+```text
+reports
+results
+```
 ##  AES Architecture
 The top-level AES core integrates the key expansion, encryption/decryption datapath, round control, and output generation.
 
